@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class LoginButton extends StatelessWidget {
+class SignUpButton extends StatelessWidget {
   final VoidCallback onPressed;
 
-  const LoginButton({required this.onPressed});
+  const SignUpButton({Key? key, required this.onPressed}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class LoginButton extends StatelessWidget {
         ),
       ),
       child: Text(
-        'Login',
+        'Sign-Up',
         style: TextStyle(
           fontWeight: FontWeight.bold,
         ),

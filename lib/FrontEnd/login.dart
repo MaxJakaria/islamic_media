@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islamic_media/FrontEnd/common/email.dart';
 import 'package:islamic_media/FrontEnd/common/login_button.dart';
 import 'package:islamic_media/FrontEnd/common/password.dart';
+import 'package:islamic_media/FrontEnd/common/sign_up_button.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -22,14 +23,13 @@ class LoginPage extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image:
-                AssetImage('assets/background.jpg'), // Path to your image file
+            image: AssetImage('assets/background.jpg'),
             fit: BoxFit.cover,
           ),
         ),
         child: Padding(
           padding: EdgeInsets.all(16.0),
-          child: Column(
+          child: ListView(
             children: <Widget>[
               EmailField(),
               SizedBox(height: 20.0),
@@ -38,6 +38,21 @@ class LoginPage extends StatelessWidget {
               LoginButton(
                 onPressed: () {
                   // Add your login logic here
+                },
+              ),
+              SizedBox(height: 30.0), // Add some spacing
+              Center(
+                  child: Text(
+                'or',
+                style: TextStyle(
+                  fontSize: MediaQuery.of(context).size.width *
+                      0.04, // Adjust the multiplier as needed
+                ),
+              )), // "or" text
+              SizedBox(height: 5.0), // Add some spacing
+              SignUpButton(
+                onPressed: () {
+                  // Add your sign-up logic here
                 },
               ),
             ],
