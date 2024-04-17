@@ -3,6 +3,7 @@ import 'package:islamic_media/FrontEnd/common/email.dart';
 import 'package:islamic_media/FrontEnd/common/login_button.dart';
 import 'package:islamic_media/FrontEnd/common/password.dart';
 import 'package:islamic_media/FrontEnd/common/sign_up_button.dart';
+import 'package:islamic_media/FrontEnd/sign_up.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -52,7 +53,12 @@ class LoginPage extends StatelessWidget {
               SizedBox(height: 5.0), // Add some spacing
               SignUpButton(
                 onPressed: () {
-                  // Add your sign-up logic here
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            SignUpPage()), // Navigate to SignUpPage
+                  );
                 },
               ),
             ],
