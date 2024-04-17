@@ -19,20 +19,29 @@ class LoginPage extends StatelessWidget {
           ),
         ),
       ),
-      body: Padding(
-        padding: EdgeInsets.all(16.0),
-        child: Column(
-          children: <Widget>[
-            EmailField(),
-            SizedBox(height: 20.0),
-            PasswordField(),
-            SizedBox(height: 20.0),
-            LoginButton(
-              onPressed: () {
-                // Add your login logic here
-              },
-            ),
-          ],
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image:
+                AssetImage('assets/background.jpg'), // Path to your image file
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Column(
+            children: <Widget>[
+              EmailField(),
+              SizedBox(height: 20.0),
+              PasswordField(),
+              SizedBox(height: 20.0),
+              LoginButton(
+                onPressed: () {
+                  // Add your login logic here
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );
