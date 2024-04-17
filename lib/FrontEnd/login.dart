@@ -44,7 +44,7 @@ class LoginPage extends StatelessWidget {
               SizedBox(height: 30.0), // Add some spacing
               Center(
                   child: Text(
-                'or',
+                '___or___',
                 style: TextStyle(
                   fontSize: MediaQuery.of(context).size.width *
                       0.04, // Adjust the multiplier as needed
