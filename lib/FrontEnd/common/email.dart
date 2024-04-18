@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class EmailField extends StatelessWidget {
+  const EmailField({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return const TextField(
       decoration: InputDecoration(
         labelText: 'Email',
         prefixIcon: Icon(Icons.email),

@@ -12,7 +12,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text(
             'IslamicMedia',
             style: TextStyle(
@@ -22,26 +22,26 @@ class LoginPage extends StatelessWidget {
         ),
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/background.jpg'),
             fit: BoxFit.cover,
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: ListView(
             children: <Widget>[
-              EmailField(),
-              SizedBox(height: 20.0),
-              PasswordField(),
-              SizedBox(height: 20.0),
+              const EmailField(),
+              const SizedBox(height: 20.0),
+              const PasswordField(),
+              const SizedBox(height: 20.0),
               LoginButton(
                 onPressed: () {
                   // Add your login logic here
                 },
               ),
-              SizedBox(height: 30.0), // Add some spacing
+              const SizedBox(height: 30.0), // Add some spacing
               Center(
                   child: Text(
                 '___or___',
@@ -50,14 +50,14 @@ class LoginPage extends StatelessWidget {
                       0.04, // Adjust the multiplier as needed
                 ),
               )), // "or" text
-              SizedBox(height: 5.0), // Add some spacing
+              const SizedBox(height: 5.0), // Add some spacing
               SignUpButton(
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            SignUpPage()), // Navigate to SignUpPage
+                            const SignUpPage()), // Navigate to SignUpPage
                   );
                 },
               ),

@@ -1,0 +1,4 @@
+#Thu Apr 18 22:32:01 BDT 2024
+base.0=E\:\\Project 2-1\\islamic_media\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -16,7 +16,7 @@ class _ConfirmPasswordFildState extends State<ConfirmPasswordFild> {
       obscureText: !_passwordVisible,
       decoration: InputDecoration(
         labelText: 'Confirm password',
-        prefixIcon: Icon(Icons.lock_open),
+        prefixIcon: const Icon(Icons.lock_open),
         suffixIcon: IconButton(
           icon: Icon(
             _passwordVisible ? Icons.visibility : Icons.visibility_off,

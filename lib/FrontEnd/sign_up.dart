@@ -11,7 +11,7 @@ class SignUpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text(
             'IslamicMedia',
             style: TextStyle(
@@ -21,7 +21,7 @@ class SignUpPage extends StatelessWidget {
         ),
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image:
                 AssetImage('assets/background.jpg'), // Path to your image file
@@ -29,22 +29,22 @@ class SignUpPage extends StatelessWidget {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: ListView(
             children: <Widget>[
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: 'Name',
                   prefixIcon: Icon(Icons.person),
                 ),
               ),
-              SizedBox(height: 20.0),
-              EmailField(),
-              SizedBox(height: 20.0),
-              PasswordField(),
-              SizedBox(height: 20.0),
-              ConfirmPasswordFild(),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
+              const EmailField(),
+              const SizedBox(height: 20.0),
+              const PasswordField(),
+              const SizedBox(height: 20.0),
+              const ConfirmPasswordFild(),
+              const SizedBox(height: 20.0),
               SignUpButton(
                 onPressed: () {
                   // Add your sign-up logic here
