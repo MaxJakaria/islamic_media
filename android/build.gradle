@@ -17,7 +17,3 @@ allprojects {
         mavenCentral()
     }
 }
-
-android {
-  compileSdkVersion 34
-}
