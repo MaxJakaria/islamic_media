@@ -5,6 +5,7 @@ import 'package:islamic_media/FrontEnd/common/login_button.dart';
 import 'package:islamic_media/FrontEnd/common/password.dart';
 import 'package:islamic_media/FrontEnd/common/sign_up_button.dart';
 import 'package:islamic_media/FrontEnd/sign_up.dart';
+import 'package:islamic_media/widgets/chat_user_card.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
