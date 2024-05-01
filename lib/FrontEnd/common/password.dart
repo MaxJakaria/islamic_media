@@ -10,11 +10,13 @@ class PasswordField extends StatefulWidget {
 }
 
 class _PasswordFieldState extends State<PasswordField> {
+  final _passwordController = TextEditingController();
   bool _passwordVisible = false;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: _passwordController,
       obscureText: !_passwordVisible,
       decoration: InputDecoration(
         labelText: 'Password',

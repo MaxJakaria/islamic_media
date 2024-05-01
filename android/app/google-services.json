@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "1056766311552",
-    "project_id": "zakirvai",
-    "storage_bucket": "zakirvai.appspot.com"
+    "project_number": "349567200503",
+    "project_id": "islamic-media-8b317",
+    "storage_bucket": "islamic-media-8b317.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1056766311552:android:3283a384e46132cafb3a65",
+        "mobilesdk_app_id": "1:349567200503:android:db72eeab39ff32299d37f2",
         "android_client_info": {
           "package_name": "com.example.islamic_media"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCglKMMQg1uxHw68NwpWZ_UlfFUgsf4kxw"
+          "current_key": "AIzaSyAZUHyJeUM3SGyYbhCMacXJWBPFqReR3uE"
         }
       ],
       "services": {

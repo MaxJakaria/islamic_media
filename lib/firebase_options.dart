@@ -41,49 +41,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAih55v4yszRZFnB25ZHq-TbbcEWMF4gHs',
-    appId: '1:1056766311552:web:54e3448c082e5ba2fb3a65',
-    messagingSenderId: '1056766311552',
-    projectId: 'zakirvai',
-    authDomain: 'zakirvai.firebaseapp.com',
-    storageBucket: 'zakirvai.appspot.com',
-    measurementId: 'G-90970EK25N',
+    apiKey: 'AIzaSyCk98FIyxI5ifh-dP1Yrv0qLOEYRao43lo',
+    appId: '1:349567200503:web:c864ada120bbf04b9d37f2',
+    messagingSenderId: '349567200503',
+    projectId: 'islamic-media-8b317',
+    authDomain: 'islamic-media-8b317.firebaseapp.com',
+    storageBucket: 'islamic-media-8b317.appspot.com',
+    measurementId: 'G-0K4Q3MZ72D',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCglKMMQg1uxHw68NwpWZ_UlfFUgsf4kxw',
-    appId: '1:1056766311552:android:3283a384e46132cafb3a65',
-    messagingSenderId: '1056766311552',
-    projectId: 'zakirvai',
-    storageBucket: 'zakirvai.appspot.com',
+    apiKey: 'AIzaSyAZUHyJeUM3SGyYbhCMacXJWBPFqReR3uE',
+    appId: '1:349567200503:android:db72eeab39ff32299d37f2',
+    messagingSenderId: '349567200503',
+    projectId: 'islamic-media-8b317',
+    storageBucket: 'islamic-media-8b317.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAiybNYTkMEFEVUVDHRrhCiRzyK1UWxEuk',
-    appId: '1:1056766311552:ios:b4e38881c548ab0efb3a65',
-    messagingSenderId: '1056766311552',
-    projectId: 'zakirvai',
-    storageBucket: 'zakirvai.appspot.com',
+    apiKey: 'AIzaSyDwqCgPji5uM8EBnoyCOte9luYo8oE2vi0',
+    appId: '1:349567200503:ios:372ef464f4c153539d37f2',
+    messagingSenderId: '349567200503',
+    projectId: 'islamic-media-8b317',
+    storageBucket: 'islamic-media-8b317.appspot.com',
     iosBundleId: 'com.example.islamicMedia',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAiybNYTkMEFEVUVDHRrhCiRzyK1UWxEuk',
-    appId: '1:1056766311552:ios:b4e38881c548ab0efb3a65',
-    messagingSenderId: '1056766311552',
-    projectId: 'zakirvai',
-    storageBucket: 'zakirvai.appspot.com',
+    apiKey: 'AIzaSyDwqCgPji5uM8EBnoyCOte9luYo8oE2vi0',
+    appId: '1:349567200503:ios:372ef464f4c153539d37f2',
+    messagingSenderId: '349567200503',
+    projectId: 'islamic-media-8b317',
+    storageBucket: 'islamic-media-8b317.appspot.com',
     iosBundleId: 'com.example.islamicMedia',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyAih55v4yszRZFnB25ZHq-TbbcEWMF4gHs',
-    appId: '1:1056766311552:web:e52c8f992170edbefb3a65',
-    messagingSenderId: '1056766311552',
-    projectId: 'zakirvai',
-    authDomain: 'zakirvai.firebaseapp.com',
-    storageBucket: 'zakirvai.appspot.com',
-    measurementId: 'G-YEZKD6HH9N',
+    apiKey: 'AIzaSyCk98FIyxI5ifh-dP1Yrv0qLOEYRao43lo',
+    appId: '1:349567200503:web:dd0a003a467b75739d37f2',
+    messagingSenderId: '349567200503',
+    projectId: 'islamic-media-8b317',
+    authDomain: 'islamic-media-8b317.firebaseapp.com',
+    storageBucket: 'islamic-media-8b317.appspot.com',
+    measurementId: 'G-NRZB75FEJT',
   );
-
 }
