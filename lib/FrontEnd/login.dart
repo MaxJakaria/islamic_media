@@ -14,7 +14,7 @@ class LoginPage extends StatelessWidget {
       appBar: AppBar(
         title: const Center(
           child: Text(
-            'IslamicMedia',
+            'Islamic Media',
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),
