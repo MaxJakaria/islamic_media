@@ -1,6 +1,6 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:islamic_media/API/api.dart';
 import 'package:islamic_media/widgets/chat_user_card.dart';
 
 class FirebaseAuthentication {
@@ -8,7 +8,7 @@ class FirebaseAuthentication {
       BuildContext context) async {
     showDialog(
       context: context,
-      builder: (context) => Center(
+      builder: (context) => const Center(
         child: CircularProgressIndicator(),
       ),
     );
@@ -36,7 +36,7 @@ class FirebaseAuthentication {
       String email, String password, BuildContext context) async {
     showDialog(
       context: context,
-      builder: (context) => Center(
+      builder: (context) => const Center(
         child: CircularProgressIndicator(),
       ),
     );
@@ -55,14 +55,20 @@ class FirebaseAuthentication {
           MaterialPageRoute(
             builder: (context) {
               return Scaffold(
-                body: ListView.builder(
-                  itemCount: 16,
-                  padding: EdgeInsets.only(
-                      top: MediaQuery.of(context).size.height * 0.01),
-                  physics: BouncingScrollPhysics(),
-                  itemBuilder: (context, Index) {
-                    return ChatUserCard();
-                  },
+                body: StreamBuilder(
+
+                  stream: APIs.firestore.collection('User').snapshots(),
+                  builder: (context, snapshot) {
+                    return ListView.builder(
+                      itemCount: 16,
+                      padding: EdgeInsets.only(
+                          top: MediaQuery.of(context).size.height * 0.01),
+                      physics: const BouncingScrollPhysics(),
+                      itemBuilder: (context, Index) {
+                        return const ChatUserCard();
+                      },
+                    );
+                  }
                 ),
               );
             },

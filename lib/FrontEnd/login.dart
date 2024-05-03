@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:islamic_media/Firebase%20auth/firebase_authentication.dart';
 import 'package:islamic_media/FrontEnd/common/email.dart';
 import 'package:islamic_media/FrontEnd/common/login_button.dart';
-import 'package:islamic_media/FrontEnd/common/password.dart';
 import 'package:islamic_media/FrontEnd/common/sign_up_button.dart';
 import 'package:islamic_media/FrontEnd/sign_up.dart';
-import 'package:islamic_media/widgets/chat_user_card.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -15,6 +13,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  bool _passwordVisible = false;
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   TextFildDecoration textFildDecoration = TextFildDecoration();
@@ -46,13 +45,25 @@ class _LoginPageState extends State<LoginPage> {
               TextField(
                 controller: _emailController,
                 decoration: textFildDecoration.creatTextFildDecoration(
-                    "Emali", Icon(Icons.email)),
+                    "Emali", const Icon(Icons.email)),
               ),
               const SizedBox(height: 20.0),
               TextField(
+                obscureText: !_passwordVisible,
                 controller: _passwordController,
-                decoration: textFildDecoration.creatTextFildDecoration(
-                    "Password", Icon(Icons.key)),
+                decoration: InputDecoration(
+                    labelText: "Password",
+                    prefixIcon: Icon(Icons.key),
+                  suffixIcon: IconButton(
+                    icon: Icon(
+                      _passwordVisible ? Icons.visibility : Icons.visibility_off,
+                    ),
+                    onPressed: () {
+                      setState(() {
+                        _passwordVisible = !_passwordVisible;
+                      });
+                    },
+                  ),),
               ),
               const SizedBox(height: 20.0),
               LoginButton(
